@@ -1,0 +1,15 @@
+#!/sbin/sh
+#################
+# Initialization
+#################
+umask 022
+ui_print() { echo "$1"; }
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+[ -f /data/adb/ksu/bin/busybox ] && BB=/data/adb/ksu/bin/busybox
+[ -f /data/adb/magisk/busybox ] && BB=/data/adb/magisk/busybox
+[ -z "$BB" ] && BB=busybox
+
+ui_print "- Installing module via KernelSU-Next..."

@@ -1,0 +1,6 @@
+id=set_anim_05
+name=Set Anim 0.5x
+version=v1.3
+versionCode=4
+author=ThRE Team
+description=Automatically sets system animation scale (window, transition, animator) to 0.5x immediately upon installation and on boot (ID/EN). / Mengatur skala animasi sistem ke 0.5x secara instan saat pemasangan dan saat booting (ID/EN).
